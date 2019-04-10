@@ -1,0 +1,44 @@
+/*Añade un fondo bonito para las explicaciones.*/
+.fondue {
+  background-image: url("../imagenes/fondo.png");
+}
+/*Añade un fondo de una playa para la animación.*/
+.fonduePlaya {
+  background-image: url("../imagenes/fondo.jpg");
+}
+
+.papelillo{
+  background-color: #dbdbdb;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+
+/*Definimos como va a ser el movimiento va de izquierda a derecha
+y conforme se aleja la imagen se hace más pequeña*/
+@-webkit-keyframes movimiento
+{
+  from {
+    left : -80%;
+    transform: scale(2);
+  }
+  to {
+    left: 90%;
+    transform: scale(0);
+  }
+}
+
+/*El bloque (imagen del avión) tiene posición relativa y hay
+inifinitas iteraciones, ademas le damos valor a la velocidad.*/
+#block {
+  position:relative;
+  -webkit-animation-name: movimiento;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Arquitectura de Software</title>
+    <!-- Importamos Bootstrap para los estilos-->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="funciones/funciones.js" type="text/javascript"></script>
+
+  </head>
+
+  <body class="fonduePlaya">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" >
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="imagenes/SEAS.png"/>  Ejercicio de FeedBack UD5</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!--Botones para parar y seguir con la marcha-->
+              <div class="boton">
+                  <button onclick="parar()" class="btn btn-danger">STOP</button>
+                  <button onclick="seguir()" class="btn btn-success">SEGUIR</button>
+              </div>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Velocidad
+                  </a>
+                  <!--Select con las velocidades que pasamos por parámetro a la funcion-->
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                      <a class="dropdown-item" onclick="velocidad(1)">1</a>
+                      <a class="dropdown-item"  onclick="velocidad(2)">2</a>
+                      <a class="dropdown-item"  onclick="velocidad(3)">3</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="vistas/explicacion.html">Explicación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="vistas/manual.html">Manual</a>
+                </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br><br><br><br>
+    <!-- Contenido principal -->
+    <div class="container">
+
+        <img id="block" src="imagenes/avion.png"/> 
+
+    </div>
+
+    <!-- /.container -->
+
+    <!-- Parte de footer -->
+    <footer class="py-1 bg-dark fixed-bottom">
+      <div class="container">
+        <p class="m-0 text-right text-white">Trabajo realizado por Héctor Tornos Faure // Curso 2018-2019 Bachelor TIE</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+   
+    <!-- Bootstrap y Jquery -->
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   
+
+  </body>
+
+</html>
